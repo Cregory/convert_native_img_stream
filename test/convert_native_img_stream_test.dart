@@ -14,7 +14,9 @@ class MockConvertNativeImgStreamPlatform
   Future<String?> getPlatformVersion() => Future.value('42');
 
   @override
-  Future<Uint8List?> convert(Uint8List imgBytes, double width, double height, int quality) {
+  Future<Uint8List?> convert(Uint8List imgBytes, int width,
+      int height,
+      int quality) {
     return Future.value(Uint8List(0));
   }
 }
